@@ -447,38 +447,6 @@ export default function StatisticsPage() {
                         ))}
                     </div>
                 </Card>
-
-                {/* Top Languages */}
-                {stats.topLanguages.length > 0 && (
-                    <Card>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-500 pb-2">
-                            💻 Top 10 Bahasa Pemrograman
-                        </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                            {stats.topLanguages.map((lang, index) => (
-                                <div
-                                    key={index}
-                                    className="p-4 bg-blue-50 rounded-lg text-center"
-                                >
-                                    <div className="text-3xl font-bold text-blue-600 mb-1">
-                                        {lang.count.toLocaleString()}
-                                    </div>
-                                    <div className="text-sm text-gray-600 font-semibold">
-                                        {lang.name}
-                                    </div>
-                                    <div className="text-xs text-gray-500 mt-1">
-                                        (
-                                        {formatPercentage(
-                                            lang.count,
-                                            stats.totalPackages
-                                        )}
-                                        %)
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </Card>
-                )}
             </Container>
         </main>
     )

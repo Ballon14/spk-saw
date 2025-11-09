@@ -127,12 +127,20 @@ export default function Home() {
         title="🏆 Sistem Pendukung Keputusan"
         description="Metode Simple Additive Weighting (SAW) untuk Evaluasi Package NPM"
         actions={
-          <Link
-            href="/packages"
-            className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200"
-          >
-            📦 Lihat Semua Packages →
-          </Link>
+          <>
+            <Link
+              href="/packages"
+              className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200"
+            >
+              📦 Packages
+            </Link>
+            <Link
+              href="/statistics"
+              className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200"
+            >
+              📊 Statistik
+            </Link>
+          </>
         }
       />
 

@@ -104,12 +104,20 @@ export default function PackagesPage() {
                 title="📦 Semua Package NPM"
                 description="Daftar lengkap semua package dalam dataset"
                 actions={
-                    <Link
-                        href="/"
-                        className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200"
-                    >
-                        ← Kembali ke SAW
-                    </Link>
+                    <>
+                        <Link
+                            href="/"
+                            className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200"
+                        >
+                            🏆 SAW
+                        </Link>
+                        <Link
+                            href="/statistics"
+                            className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200"
+                        >
+                            📊 Statistik
+                        </Link>
+                    </>
                 }
             />
 

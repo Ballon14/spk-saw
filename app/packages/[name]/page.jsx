@@ -111,12 +111,17 @@ export default function PackageDetailPage() {
                     <>
                         <Link href="/packages">
                             <span className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200">
-                                ← Semua Packages
+                                📦 Packages
                             </span>
                         </Link>
                         <Link href="/">
                             <span className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200">
                                 🏆 SAW
+                            </span>
+                        </Link>
+                        <Link href="/statistics">
+                            <span className="px-5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg font-semibold transition-all duration-200">
+                                📊 Statistik
                             </span>
                         </Link>
                     </>
